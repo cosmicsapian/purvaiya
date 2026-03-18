@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purvaiya Official | Echoes of Ancient UP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Martel:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #F9F4EF; /* Parchment Paper */
+            --primary-color: #5D2A18; /* Deep Gairu / Terracotta */
+            --text-color: #2D241E; /* Dark Umber */
+            --accent-color: #D4A373; /* Sandy Doab Soil */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Crimson Pro', serif;
+            line-height: 1.6;
+        }
+
+        /* Texture Overlay for that 'Gaav' feel */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid rgba(93, 42, 24, 0.1);
+        }
+
+        .logo-area h1 {
+            font-family: 'Martel', serif;
+            font-size: 3rem;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #7A6A5E;
+            margin-top: 5px;
+        }
+
+        nav {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .post-card {
+            margin-bottom: 60px;
+            border-bottom: 1px solid rgba(93, 42, 24, 0.1);
+            padding-bottom: 40px;
+        }
+
+        .category {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .post-title {
+            font-family: 'Martel', serif;
+            font-size: 2.2rem;
+            margin: 10px 0;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .post-meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .post-excerpt {
+            font-size: 1.2rem;
+            color: #4A3F35;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: rgba(93, 42, 24, 0.05);
+            font-size: 0.9rem;
+        }
+
+        /* Minimalist Mobile View */
+        @media (max-width: 600px) {
+            .logo-area h1 { font-size: 2rem; }
+            .post-title { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>Purvaiya</h1>
+            <p class="tagline">The Easterly Wind Carrying Tales of Ancient UP</p>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Ancient Eras</a>
+            <a href="#">Jaunpur Lore</a>
+            <a href="#">The Researcher</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="post-card">
+            <span class="category">Ancient Dynasties</span>
+            <h2 class="post-title">The Lords of the North: Why Kannauj Was the Prize of India</h2>
+            <p class="post-meta">March 18, 2026 • By Nishant</p>
+            <p class="post-excerpt">
+                Before the era of Sultanates, the city of Kannauj was the ultimate symbol of sovereignty. From Harshavardhana to the Tripartite Struggle, we explore the "signatures" left by the kings who once controlled the flow of the Ganga and Yamuna...
+            </p>
+            <a href="#" class="read-more">Continue Reading</a>
+        </article>
+
+        <article class="post-card">
+            <span class="category">Purvanchal Roots</span>
+            <h2 class="post-title">Gomti’s Silent Witness: Pre-Sultanate Jaunpur</h2>
+            <p class="post-meta">March 10, 2026 • By Nishant</p>
+            <p class="post-excerpt">
+                While Jaunpur is famous for the Sharqi architecture, its roots dive deeper into the Gahadavala Empire. This post looks at the archaeological remnants and folk memories that pre-date the Shahi Bridge...
+            </p>
+            <a href="#" class="read-more">Continue Reading</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Purvaiya Official. All Rights Reserved.</p>
+        <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.6;">Rooted in Jaunpur | Researched at IIT Roorkee</p>
+    </footer>
+
+</body>
+</html>
