@@ -19,19 +19,38 @@
             box-sizing: border-box;
         }
 
-        body {
-            /* This color matches the average tone of your logo's background */
-            background-color: #f2ede4; 
+body {
+
+            background-color: var(--bg-color);
+
             color: var(--text-color);
+
             font-family: 'Crimson Pro', serif;
+
             line-height: 1.6;
-            /* This adds a grain texture to the whole site */
-            background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
+
         }
 
+
+        /* Texture Overlay for that 'Gaav' feel */
+
         body::before {
-            display: none; /* Disabling the old fiber texture to avoid clashing */
-        }
+
+            content: "";
+
+            position: fixed;
+
+            top: 0; left: 0; width: 100%; height: 100%;
+
+            background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+
+            opacity: 0.4;
+
+            pointer-events: none;
+
+            z-index: -1;
+
+        } 
 
         header {
             text-align: center;
